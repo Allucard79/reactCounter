@@ -29,26 +29,26 @@ const Counter = React.createClass({
         );
     },
 
-    componentWillMount: function() {
+    componentWillMount: function () {
         console.log('Before mounting the component');
-        },
-    
-        componentDidMount: function() {
-        console.log('After mounting the component');
-        },
-    
-        componentWillUpdate: function(nextProps, nextState) {
-        console.log('Current meter status: ' + nextState.counter);
-        },
+    },
 
-        shouldComponentUpdate: function() {
-            console.log('Check update component');
-            return true;
-        },
-    
-        componentDidUpdate: function(prevProps, prevState) {
+    componentDidMount: function () {
+        console.log('After mounting the component');
+    },
+
+    componentWillUpdate: function (nextProps, nextState) {
+        console.log('Current meter status: ' + nextState.counter);
+    },
+
+    shouldComponentUpdate: function () {
+        console.log('Check update component');
+        return true;
+    },
+
+    componentDidUpdate: function (prevProps, prevState) {
         console.log('The previous state of the counter: ' + prevState.counter);
-        }
+    }
 
 });
 
